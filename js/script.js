@@ -40,7 +40,7 @@ $(document).ready(function(){
 		event.preventDefault();
 	});
 
-	$(".delete").click(function(){
+	$(document).on("click", ".delete", function(){
 		$(li).remove();
 		// event.preventDefualt isn't needed 'cause this button doesn't submit a form
 	});
